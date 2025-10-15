@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modhubroty Dey Barnile — Portfolio</title>
+  <meta name="description" content="Portfolio of Modhubroty Dey Barnile — Data & AI Engineer and Robotics enthusiast." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind via CDN for convenience -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'] }
+        }
+      },
+      darkMode: 'class'
+    }
+  </script>
+  <style>
+    /* Subtle card shadow */
+    .card { @apply rounded-2xl border border-transparent p-6 bg-white/80 dark:bg-zinc-900/70 backdrop-blur shadow-lg ring-1 ring-zinc-200/70 dark:ring-zinc-800/70; }
+    .pill { @apply inline-flex items-center rounded-full px-3 py-1 text-sm bg-gradient-to-r from-indigo-100 via-fuchsia-100 to-rose-100 text-slate-800 dark:from-indigo-900/60 dark:via-fuchsia-900/60 dark:to-rose-900/60 dark:text-zinc-100 shadow; }
+    .nav-link { @apply opacity-80 hover:opacity-100 transition; }
+    .section { scroll-margin-top: 6rem; }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-rose-50 via-fuchsia-50 to-indigo-50 dark:from-slate-950 dark:via-slate-950 dark:to-black text-zinc-900 dark:text-zinc-100">
+  <!-- Decorative blobs -->
+  <div aria-hidden="true" class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+    <div class="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-fuchsia-400/25 dark:bg-fuchsia-600/20 blur-3xl"></div>
+    <div class="absolute top-1/3 -right-24 h-80 w-80 rounded-full bg-indigo-400/25 dark:bg-indigo-600/20 blur-3xl"></div>
+    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 h-96 w-96 rounded-full bg-rose-400/20 dark:bg-rose-600/20 blur-3xl"></div>
+  </div>
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 border-b border-zinc-200/60 dark:border-zinc-800/60 bg-white/70 dark:bg-zinc-950/70 backdrop-blur">
+    <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#home" class="font-semibold tracking-tight">MDB</a>
+      <div class="hidden md:flex items-center gap-6 text-sm">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#education">Education</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#theses">Theses</a>
+        <a class="nav-link" href="#more">More</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="https://www.linkedin.com/in/modhubroty-dey-barnile-16631a161/" target="_blank" rel="noreferrer noopener" class="text-sm underline underline-offset-4">LinkedIn</a>
+        <a href="https://source.coderefinery.org/Modhubroty" target="_blank" rel="noreferrer noopener" class="text-sm underline underline-offset-4">Code</a>
+        <button id="themeToggler" class="text-sm border rounded-xl px-3 py-1">Toggle theme</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero / About -->
+  <section id="home" class="max-w-6xl mx-auto px-6 pt-16 pb-8 md:pt-24">
+    <div class="grid grid-cols-1 md:grid-cols-[1.2fr_.8fr] gap-8 items-center">
+      <div>
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-700 via-fuchsia-600 to-rose-600 dark:from-indigo-400 dark:via-fuchsia-300 dark:to-rose-300 bg-clip-text text-transparent">Modhubroty Dey Barnile</h1>
+        <p class="mt-3 text-lg opacity-90">Data & AI Engineer | Robotics Enthusiast</p>
+        <p class="mt-4 max-w-2xl leading-relaxed opacity-90">I design and optimize data workflows that power analytics, AI, and decision‑making. Comfortable across Python/C++ stacks, cloud, and ML ops—curious by nature and pragmatic in delivery.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <span class="pill">Umeå, Sweden</span>
+          <span class="pill">Bangladeshi</span>
+          <span class="pill">DOB: 30 Sep 1995</span>
+        </div>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="mailto:modhubroty@gmail.com" class="rounded-xl px-4 py-2 text-sm font-medium bg-gradient-to-r from-indigo-600 via-fuchsia-600 to-rose-500 text-white hover:opacity-90 shadow">Email me</a>
+          <a href="tel:+4746262218" class="rounded-xl px-4 py-2 text-sm font-medium bg-gradient-to-r from-indigo-600 via-fuchsia-600 to-rose-500 text-white hover:opacity-90 shadow">Call</a>
+          <a href="https://munin.uit.no/handle/10037/9135/browse?type=author&value=Barnile%2C+Modhubroty+Dey" target="_blank" rel="noreferrer noopener" class="rounded-xl px-4 py-2 text-sm font-medium bg-gradient-to-r from-indigo-600 via-fuchsia-600 to-rose-500 text-white hover:opacity-90 shadow">Thesis</a>
+        </div>
+      </div>
+      <div class="flex md:justify-end">
+        <img src="portrait.jpg" alt="Modhubroty Dey Barnile" loading="lazy"class="w-[18rem] h-[18rem] md:w-[22rem] md:h-[22rem] rounded-2xl object-cover border shadow-sm ring-2 ring-fuchsia-300/60 dark:ring-fuchsia-600/40"/>
+        <!-- <img src="1.jpg" alt="Modhubroty Dey Barnile" loading="lazy"class="w-[18rem] h-[18rem] md:w-[22rem] md:h-[22rem] rounded-2xl object-cover border shadow-sm ring-2 ring-fuchsia-300/60 dark:ring-fuchsia-600/40"/> -->
+
+        <!-- <img src="1.jpg" alt="Modhubroty Dey Barnile" loading="lazy" class="w-50 h-40 md:w-58 md:h-58 rounded-2xl object-cover border shadow-sm ring-2 ring-fuchsia-300/60 dark:ring-fuchsia-600/40" /> -->
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- Experience -->
+    <section id="experience" class="section py-16">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-700 via-fuchsia-600 to-rose-600 dark:from-indigo-400 dark:via-fuchsia-300 dark:to-rose-300 bg-clip-text text-transparent">Experience</h2>
+        <div class="mt-8 grid md:grid-cols-2 gap-6">
+          <!-- Item -->
+          <article class="card">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h3 class="text-xl font-semibold">Student Assistant (ANSYS – Transient Thermal)</h3>
+                <p class="opacity-80">UiT The Arctic University of Norway</p>
+              </div>
+              <span class="text-sm opacity-70 whitespace-nowrap">Sep 2024 – Nov 2024 · Narvik, Norway</span>
+            </div>
+            <ul class="mt-3 list-disc pl-5 space-y-1">
+              <li class="opacity-90">Guided students using ANSYS for transient thermal simulations.</li>
+              <li class="opacity-90">Supported understanding of simulation techniques and validation.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h3 class="text-xl font-semibold">Student Assistant (Python, DS&A)</h3>
+                <p class="opacity-80">UiT The Arctic University of Norway</p>
+              </div>
+              <span class="text-sm opacity-70 whitespace-nowrap">Jan 2024 – May 2024 · Narvik, Norway</span>
+            </div>
+            <ul class="mt-3 list-disc pl-5 space-y-1">
+              <li class="opacity-90">Assisted Python-based projects and algorithmic problem solving.</li>
+              <li class="opacity-90">Advised on system architecture and data structures.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h3 class="text-xl font-semibold">R&D – Innovation Project (Biomass-based Heating)</h3>
+                <p class="opacity-80">Dragefossen AS · UiT</p>
+              </div>
+              <span class="text-sm opacity-70 whitespace-nowrap">May 2023 – Apr 2024 · Narvik, Norway</span>
+            </div>
+            <ul class="mt-3 list-disc pl-5 space-y-1">
+              <li class="opacity-90">Predicted fuel moisture from sensor data using ML.</li>
+              <li class="opacity-90">Applied RL to tune combustion parameters in real time to optimize heat and cut emissions.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h3 class="text-xl font-semibold">Research Assistant – Baggage Intelligent System</h3>
+                <p class="opacity-80">UiT The Arctic University of Norway</p>
+              </div>
+              <span class="text-sm opacity-70 whitespace-nowrap">Jun 2023 – Aug 2023 · Narvik, Norway</span>
+            </div>
+            <ul class="mt-3 list-disc pl-5 space-y-1">
+              <li class="opacity-90">Built real-time baggage classification with Python, OpenCV, CNN.</li>
+              <li class="opacity-90">Collaborated on scalability and vendor integrations.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h3 class="text-xl font-semibold">IT Specialist</h3>
+                <p class="opacity-80">INCIDIN Bangladesh</p>
+              </div>
+              <span class="text-sm opacity-70 whitespace-nowrap">Mar 2019 – Jan 2021 · Dhaka, Bangladesh</span>
+            </div>
+            <ul class="mt-3 list-disc pl-5 space-y-1">
+              <li class="opacity-90">Managed project information and data (UNICEF, TdH Netherlands).</li>
+              <li class="opacity-90">Web design/dev, tech support, networking, and ICT maintenance.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h3 class="text-xl font-semibold">ICT Instructor (Part‑time)</h3>
+                <p class="opacity-80">Nobodigonto Academic Care</p>
+              </div>
+              <span class="text-sm opacity-70 whitespace-nowrap">Aug 2017 – Aug 2022 · Dhaka, Bangladesh</span>
+            </div>
+            <ul class="mt-3 list-disc pl-5 space-y-1">
+              <li class="opacity-90">Taught high‑school ICT; extensive public speaking experience.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h3 class="text-xl font-semibold">Bartender (Part‑time)</h3>
+                <p class="opacity-80">Narvik Kulturhus</p>
+              </div>
+              <span class="text-sm opacity-70 whitespace-nowrap">Mar 2022 – Aug 2025 · Narvik, Norway</span>
+            </div>
+            <ul class="mt-3 list-disc pl-5 space-y-1">
+              <li class="opacity-90">Customer service during events; fast, accurate service.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h3 class="text-xl font-semibold">Restaurant Employee (Part‑time)</h3>
+                <p class="opacity-80">McDonald’s Narvik</p>
+              </div>
+              <span class="text-sm opacity-70 whitespace-nowrap">Dec 2024 – Aug 2025 · Narvik, Norway</span>
+            </div>
+            <ul class="mt-3 list-disc pl-5 space-y-1">
+              <li class="opacity-90">Order handling, POS operations, and guest experience.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section py-16">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-700 via-fuchsia-600 to-rose-600 dark:from-indigo-400 dark:via-fuchsia-300 dark:to-rose-300 bg-clip-text text-transparent">Projects</h2>
+        <div class="mt-8 grid md:grid-cols-2 gap-6">
+          <article class="card">
+            <h3 class="text-xl font-semibold">Baggage Classification System</h3>
+            <p class="mt-2 opacity-90">Applied ML to automate baggage sorting with significant accuracy gains for real-time use.</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="pill">Python</span><span class="pill">OpenCV</span><span class="pill">CNN</span>
+            </div>
+          </article>
+          <article class="card">
+            <h3 class="text-xl font-semibold">Symbolic Music Generation with GANs</h3>
+            <p class="mt-2 opacity-90">Explored LLMs + GANs for symbolic music sequence generation.</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="pill">TensorFlow</span><span class="pill">Generative AI</span><span class="pill">LLM</span>
+            </div>
+          </article>
+          <article class="card">
+            <h3 class="text-xl font-semibold">Rope Winder Machine</h3>
+            <p class="mt-2 opacity-90">Built a simulated rope winder using C++ and UE blueprints.</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="pill">C++</span><span class="pill">Unreal Engine</span><span class="pill">Blueprints</span>
+            </div>
+          </article>
+          <article class="card">
+            <h3 class="text-xl font-semibold">Maze Game (Godot)</h3>
+            <p class="mt-2 opacity-90">Designed and implemented a maze game in Godot.</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="pill">C++</span><span class="pill">Godot</span>
+            </div>
+          </article>
+          <article class="card">
+            <h3 class="text-xl font-semibold">IT Infra Dashboard</h3>
+            <p class="mt-2 opacity-90">Full‑stack dashboard integrated with Azure services.</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="pill">Azure</span><span class="pill">React</span><span class="pill">Full‑stack</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section py-16">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-700 via-fuchsia-600 to-rose-600 dark:from-indigo-400 dark:via-fuchsia-300 dark:to-rose-300 bg-clip-text text-transparent">Education</h2>
+        <div class="mt-8 grid md:grid-cols-3 gap-6">
+          <article class="card">
+            <h3 class="text-lg font-semibold">M.Sc. in Artificial Intelligence</h3>
+            <p class="opacity-90">Umeå University</p>
+            <div class="mt-3 flex items-center justify-between opacity-70 text-sm">
+              <span>Sep 2025 – Ongoing</span>
+              <span>Umeå, Sweden</span>
+            </div>
+          </article>
+          <article class="card">
+            <h3 class="text-lg font-semibold">M.Sc. in Applied Computer Science (Sivilingeniør)</h3>
+            <p class="opacity-90">UiT The Arctic University of Norway</p>
+            <p class="mt-2 text-sm opacity-80">Algorithm design, system automation, software development, cloud, ML/AI, computer graphics, VR, geometric modelling, IT infrastructure</p>
+            <div class="mt-3 flex items-center justify-between opacity-70 text-sm">
+              <span>Aug 2022 – Jun 2024</span>
+              <span>Narvik, Norway</span>
+            </div>
+          </article>
+          <article class="card">
+            <h3 class="text-lg font-semibold">B.Sc. in Computer Science and Engineering</h3>
+            <p class="opacity-90">American International University–Bangladesh (AIUB)</p>
+            <div class="mt-3 flex items-center justify-between opacity-70 text-sm">
+              <span>Jan 2015 – Dec 2018</span>
+              <span>Dhaka, Bangladesh</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section py-16">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-700 via-fuchsia-600 to-rose-600 dark:from-indigo-400 dark:via-fuchsia-300 dark:to-rose-300 bg-clip-text text-transparent">Skills</h2>
+        <div class="mt-8 grid md:grid-cols-2 gap-6">
+          <article class="card">
+            <h3 class="font-semibold">Programming</h3>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="pill">Python</span><span class="pill">C++</span><span class="pill">C</span><span class="pill">Java</span><span class="pill">JavaScript</span><span class="pill">C#</span><span class="pill">R</span>
+            </div>
+            <h3 class="mt-6 font-semibold">Web</h3>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">React</span>
+            </div>
+            <h3 class="mt-6 font-semibold">Data & AI</h3>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="pill">TensorFlow</span><span class="pill">Keras</span><span class="pill">OpenCV</span>
+            </div>
+          </article>
+          <article class="card">
+            <h3 class="font-semibold">Tools</h3>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="pill">Linux</span><span class="pill">Azure</span><span class="pill">Microsoft 365</span><span class="pill">Git/GitHub</span>
+            </div>
+            <h3 class="mt-6 font-semibold">Networking</h3>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="pill">Routing</span><span class="pill">Switching</span><span class="pill">CCNA (2019)</span>
+            </div>
+            <h3 class="mt-6 font-semibold">Languages</h3>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="pill">Bangla — Native</span><span class="pill">English — C1 / Fluent</span><span class="pill">Norwegian — A2</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Theses -->
+    <section id="theses" class="section py-16">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-700 via-fuchsia-600 to-rose-600 dark:from-indigo-400 dark:via-fuchsia-300 dark:to-rose-300 bg-clip-text text-transparent">Theses & Publications</h2>
+        <div class="mt-8 grid md:grid-cols-2 gap-6">
+          <article class="card">
+            <h3 class="text-lg font-semibold">Master's Thesis</h3>
+            <p class="mt-1">AI in the Sky: Diverse Approaches to Drone Swarm Command, Control, Connection and Communication</p>
+            <p class="mt-2 text-sm opacity-80">UiT The Arctic University of Norway · Supervisor: Bernt Arild Bremdal · Jan 2024 – May 2024 · Narvik, Norway</p>
+            <p class="mt-3 text-sm"><a class="underline underline-offset-4" target="_blank" rel="noreferrer noopener" href="https://munin.uit.no/handle/10037/9135/browse?type=author&value=Barnile%2C+Modhubroty+Dey">Read online</a></p>
+          </article>
+          <article class="card">
+            <h3 class="text-lg font-semibold">Bachelor's Thesis</h3>
+            <p class="mt-1">A survey on preventing Man‑in‑the‑Middle attacks using cryptographic techniques</p>
+            <p class="mt-2 text-sm opacity-80">AIUB · Supervisor: Nahar Sultana · Jul 2018 – Dec 2018 · Dhaka, Bangladesh</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- More -->
+    <section id="more" class="section py-16">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-700 via-fuchsia-600 to-rose-600 dark:from-indigo-400 dark:via-fuchsia-300 dark:to-rose-300 bg-clip-text text-transparent">Courses, Volunteering & Memberships</h2>
+        <div class="mt-8 grid md:grid-cols-3 gap-6">
+          <article class="card">
+            <h3 class="font-semibold">Courses</h3>
+            <ul class="mt-3 space-y-2 text-sm">
+              <li class="opacity-90"><div class="font-medium">IBM Introduction to Data Science (60h)</div><div class="opacity-70">Coursera · Apr 2022 – May 2022</div></li>
+              <li class="opacity-90"><div class="font-medium">Cybersecurity Essentials</div><div class="opacity-70">Cisco Academy · Jan 2019 – Apr 2019</div></li>
+              <li class="opacity-90"><div class="font-medium">CCNA Routing & Switching</div><div class="opacity-70">AIUB ICE · Jan 2019 – Apr 2019</div></li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3 class="font-semibold">Volunteering</h3>
+            <ul class="mt-3 space-y-2 text-sm">
+              <li class="opacity-90"><div class="font-medium">Oil Spill Drill</div><div class="opacity-70">Narvik Brannstasjon · 2023</div></li>
+              <li class="opacity-90"><div class="font-medium">ICE Innovation Festival</div><div class="opacity-70">Kirkenes · 2022</div></li>
+            </ul>
+            <h3 class="mt-6 font-semibold">Memberships</h3>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="pill">NITO</span><span class="pill">Norges Røde Kors</span><span class="pill">Campustinget</span>
+            </div>
+          </article>
+          <article class="card">
+            <h3 class="font-semibold">Extracurricular</h3>
+            <ul class="mt-3 space-y-2 text-sm">
+              <li class="opacity-90"><div class="font-medium">Chayanaut Sangeet Bidyatan</div><div class="opacity-70">Classical music</div></li>
+              <li class="opacity-90"><div class="font-medium">Bangladesh Taekwondo Federation</div><div class="opacity-70">Taekwondo</div></li>
+              <li class="opacity-90"><div class="font-medium">Indira Gandhi Cultural Center</div><div class="opacity-70">Yoga</div></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section py-16">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-700 via-fuchsia-600 to-rose-600 dark:from-indigo-400 dark:via-fuchsia-300 dark:to-rose-300 bg-clip-text text-transparent">Contact & References</h2>
+        <article class="card mt-8">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <h3 class="font-semibold">Contact</h3>
+              <p class="mt-3 text-sm opacity-90">
+                <span class="block">Email: <a class="underline underline-offset-4" href="mailto:modhubroty@gmail.com">modhubroty@gmail.com</a></span>
+                <span class="block">Phone: <a class="underline underline-offset-4" href="tel:+4746262218">+47 4626 2218</a></span>
+                <span class="block">LinkedIn: <a class="underline underline-offset-4" href="https://www.linkedin.com/in/modhubroty-dey-barnile-16631a161/" target="_blank" rel="noreferrer noopener">Profile</a></span>
+                <span class="block">Code: <a class="underline underline-offset-4" href="https://source.coderefinery.org/Modhubroty" target="_blank" rel="noreferrer noopener">Repository</a></span>
+              </p>
+            </div>
+            <div>
+              <h3 class="font-semibold">References</h3>
+              <ul class="mt-3 grid gap-3 text-sm">
+                <li class="opacity-90"><div class="font-medium">Prof. Bernt Arild Bremdal</div><div>UiT – Dept. of Computer Science and Computational Engineering</div><div class="opacity-80">bernt.s.bremdal@uit.no · +47 900 61 173</div></li>
+                <li class="opacity-90"><div class="font-medium">Prof. Rune Dalmo</div><div>UiT – Dept. of Computer Science and Computational Engineering</div><div class="opacity-80">rune.dalmo@uit.no · +47 769 66 195</div></li>
+                <li class="opacity-90"><div class="font-medium">Prof. Hung Thanh Nguyen</div><div>UiT – Institutt for bygg, energi og materialteknologi</div><div class="opacity-80">hung.thanh.nguyen@uit.no · +47 769 66 249</div></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="mailto:modhubroty@gmail.com" class="rounded-xl px-4 py-2 text-sm font-medium bg-gradient-to-r from-indigo-600 via-fuchsia-600 to-rose-500 text-white hover:opacity-90 shadow">Get in touch</a>
+            <a href="#home" class="rounded-xl px-4 py-2 text-sm font-medium bg-gradient-to-r from-indigo-600 via-fuchsia-600 to-rose-500 text-white hover:opacity-90 shadow">Back to top</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-12">
+    <div class="max-w-6xl mx-auto px-6 text-sm opacity-70 text-center">
+      © <span id="year"></span> Modhubroty Dey Barnile. Built with HTML & Tailwind.
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Theme toggle with localStorage
+    const root = document.documentElement;
+    const key = 'mdb-theme';
+    const saved = localStorage.getItem(key);
+    if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      root.classList.add('dark');
+    }
+    document.getElementById('themeToggler').addEventListener('click', () => {
+      root.classList.toggle('dark');
+      localStorage.setItem(key, root.classList.contains('dark') ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>
